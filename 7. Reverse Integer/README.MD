@@ -14,8 +14,10 @@ public int reverse(int x)
 
     return result;
 }
-他这个判断有什么意义吗
+浠栬繖涓垽鏂湁浠�涔堟剰涔夊悧
  if ((newResult - tail) / 10 != result)
-        { return 0; }
+ 聽 聽 聽  { return 0; }
+鍦╠iscuss鍖哄彂鐜颁綔鑰呯殑鍥炵瓟锛岄槻姝㈡暟鎹孩鍑烘儏鍐靛彂鐢熺殑
+"(newResult - tail) / 10" turns the "result * 10 + tail" back. If no overflow exists, "(newResult - tail) / 10" should be equal to "result". If overflow happens, they cannot be equal.
 
 https://leetcode.com/problems/reverse-integer/discuss/
